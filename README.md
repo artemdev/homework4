@@ -1,3 +1,3 @@
 # homework4
 HTML / CSS version of following picture has been made 
-img['img/task.png']
+<img src="img/task.jpg" width="400">
