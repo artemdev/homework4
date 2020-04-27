@@ -8,11 +8,6 @@
   font-family: "Roboto", sans-serif;
   color: #555252;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* navigation menu */
 
@@ -50,14 +45,14 @@ ul li a {
 ul li {
   display: inline-block;
 }
-.right-menu {
+.menu-container ul {
   text-align: right;
   float: right;
   width: 465px;
   font-family: "Open Sans";
   font-weight: bold;
 }
-ul.right-menu li {
+.menu-container ul li {
   margin-top: 25px;
   margin-right: 25px;
   font-size: 0;
@@ -65,14 +60,14 @@ ul.right-menu li {
   height: 60px;
 }
 
-ul.right-menu li a {
+.menu-container ul li a {
   display: block;
   font-size: 14px;
 }
-ul.right-menu li a:hover {
+.menu-container ul li a:hover {
   color: #1abc9c;
 }
-ul.right-menu li:last-child {
+.menu-container ul li:last-child {
   margin-right: 0;
 }
 
@@ -122,19 +117,16 @@ img {
 }
 /* PRODUCTS */
 ul.products li {
-  width: 20%;
   margin-right: 30px;
   margin-bottom: 30px;
-  display: inline-block;
   width: 255px;
 }
 
-a.button {
+.button {
   background-color: #4ec6ab;
   padding: 20px 34px;
   font-size: 16px;
   line-height: 26px;
-  text-transform: none;
   color: #ffffff;
   float: left;
 }
@@ -174,7 +166,6 @@ ul.products li:nth-child(4n) {
 ul.news li {
   margin-right: 30px;
   margin-bottom: 30px;
-  display: inline-block;
   font-size: 18px;
   line-height: 32px;
   width: 350px;
