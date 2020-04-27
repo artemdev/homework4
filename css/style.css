@@ -126,13 +126,12 @@ ul.products li {
   margin-right: 30px;
   margin-bottom: 30px;
   display: inline-block;
-  font-size: 18px;
-  line-height: 32px;
   width: 255px;
 }
+
 a.button {
   background-color: #4ec6ab;
-  padding: 20px 34;
+  padding: 20px 34px;
   font-size: 16px;
   line-height: 26px;
   text-transform: none;
@@ -152,7 +151,7 @@ ul.products li:nth-child(4n) {
   line-height: 50px;
   padding-left: 13px;
   background-color: #323232;
-  color: ffffff;
+  color: #ffffff;
   font-size: 18px;
 }
 .products a:hover .product-title {
@@ -164,9 +163,10 @@ ul.products li:nth-child(4n) {
 .price {
   width: 54px;
   line-height: 50px;
+  font-size: 18px;
   float: left;
   background-color: #8c8c8c;
-  color: ffffff;
+  color: #ffffff;
 }
 
 /* NEWS  */
