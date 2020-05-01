@@ -1,22 +1,30 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .wrap {
   width: 1170px;
   margin: 0 auto;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
   color: #555252;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* navigation menu */
 
-.menu-container {
+.menu {
   width: 1100px;
   margin: 0 auto;
 }
 
 .logo {
+  font-family: "Roboto-Light", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
@@ -28,6 +36,7 @@
 
 .logo::first-letter {
   color: #1abc9c;
+  font-weight: bold;
 }
 
 nav {
@@ -45,14 +54,14 @@ ul li a {
 ul li {
   display: inline-block;
 }
-.menu-container ul {
+.menu ul {
   text-align: right;
   float: right;
   width: 465px;
   font-family: "Open Sans";
   font-weight: bold;
 }
-.menu-container ul li {
+.menu ul li {
   margin-top: 25px;
   margin-right: 25px;
   font-size: 0;
@@ -60,14 +69,14 @@ ul li {
   height: 60px;
 }
 
-.menu-container ul li a {
+.menu ul li a {
   display: block;
   font-size: 14px;
 }
-.menu-container ul li a:hover {
+.menu ul li a:hover {
   color: #1abc9c;
 }
-.menu-container ul li:last-child {
+.menu ul li:last-child {
   margin-right: 0;
 }
 
@@ -116,7 +125,8 @@ img {
   background-color: #e9f0fd;
 }
 /* PRODUCTS */
-ul.products li {
+
+.products ul li {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 255px;
@@ -130,40 +140,46 @@ ul.products li {
   color: #ffffff;
   float: left;
 }
-ul.products {
+.products ul {
   font-size: 0;
 }
-ul.products li:nth-child(4n) {
+.products ul li:nth-child(4n) {
   margin-right: 0px;
 }
-.product-title {
-  width: 201px;
+.product-info {
+  width: 255px;
   text-align: left;
-  float: left;
   line-height: 50px;
-  padding-left: 13px;
   background-color: #323232;
   color: #ffffff;
   font-size: 18px;
 }
-.products a:hover .product-title {
+.product-info h3 {
+  padding-left: 13px;
+  float: left;
+  width: 201px;
+  color: white;
+}
+
+.products ul li:hover h3 {
   background-color: #1abc9c;
 }
-.products a:hover .price {
+.products ul li:hover .price {
   background-color: #7fd9c7;
 }
 .price {
+  display: inline-block;
   width: 54px;
   line-height: 50px;
   font-size: 18px;
-  float: left;
-  background-color: #8c8c8c;
   color: #ffffff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.44);
 }
 
 /* NEWS  */
 
-ul.news li {
+.news ul li {
   margin-right: 30px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -175,18 +191,18 @@ ul.news li {
   text-align: left;
 }
 
-ul.news li h4 {
+.news ul li h4 {
   font-size: 18px;
   margin-bottom: 47px;
   margin-top: 10px;
 }
-ul.news li p {
+.news ul li p {
   margin-bottom: 17px;
 }
 
-ul.news {
+.news ul {
   font-size: 0;
 }
-ul.news li:nth-child(3n) {
+.news ul li:nth-child(3n) {
   margin-right: 0px;
 }
