@@ -4,7 +4,7 @@
   padding: 0;
 }
 .wrap {
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
   text-align: center;
   font-family: "Roboto Bold", sans-serif;
@@ -21,6 +21,7 @@
 .menu {
   width: 1100px;
   margin: 0 auto;
+  margin-bottom: 105px;
 }
 
 .logo {
@@ -88,7 +89,6 @@ h2 {
 
 h2 {
   font-weight: bold;
-  margin-top: 105px;
   margin-bottom: 130px;
 }
 
@@ -125,7 +125,9 @@ img {
   background-color: #e9f0fd;
 }
 /* PRODUCTS */
-
+.products {
+  margin-bottom: 105px;
+}
 .products ul li {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -189,6 +191,7 @@ img {
   font-size: 14px;
   line-height: 26px;
   text-align: left;
+  float: left;
 }
 
 .news ul li h4 {
